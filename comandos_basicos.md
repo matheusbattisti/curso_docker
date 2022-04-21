@@ -2,12 +2,8 @@
 
 - Install Docker Engine on Ubuntu
 
-```
-[link](https://docs.docker.com/engine/install/ubuntu/){:target="_blank"}
+[docker-doc](https://docs.docker.com/engine/install/ubuntu/){:target="_blank"}
 
-<a href="https://docs.docker.com/engine/install/ubuntu/"> Download </a>
-
-```
 
 ## Configura docker para funcionar sem sudo
 

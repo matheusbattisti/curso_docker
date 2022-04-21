@@ -113,6 +113,13 @@ docker start (id do container)
 
 ```
 
+- **-i** Modo interativo. Mantém o STDIN aberto mesmo sem console anexado
+
+```
+docker start -i (id do container)
+
+```
+
 ## Atribuir nome ao container
 
 ```
@@ -122,10 +129,10 @@ docker run -it 80:80 --name servidor-apache httpd
 
 ## Executar servidor nginx 
 
-- Executando com parametro -d para exutar em background
+- Executando com parametro -d para executar em background
 
 ```
-docker run -it -d -p 8080:80 nginx
+docker run -d -p 80:80 --name nginx-docker nginx
 
 ```
 

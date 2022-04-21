@@ -136,3 +136,9 @@ docker run -d -p 80:80 --name nginx-docker nginx
 
 ```
 
+## Acessando docker logs com parametro -f de follow
+
+```
+docker logs -f (id do container)
+
+```

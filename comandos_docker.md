@@ -1,54 +1,90 @@
-- Segue a lista de comandos docker e sua utilidade:
+## docker --help
 
 ```
+Usage:  docker [OPTIONS] COMMAND
 
-docker attach  – Acessar dentro do container e trabalhar a partir dele.
-docker build   – A partir de instruções de um arquivo Dockerfile eu possa criar uma imagem.
-docker commit  – Cria uma imagem a partir de um container.
-docker cp      – Copia arquivos ou diretórios do container para o host.
-docker create  – Cria um novo container.
-docker diff    – Exibe as alterações feitas no filesystem do container.
-docker events  – Exibe os eventos do container em tempo real.
-docker exec    – Executa uma instrução dentro do container que está rodando sem precisar atachar nele.
-docker export  – Exporta um container para um arquivo .tar.
-docker history – Exibe o histórico de comandos que foram executados dentro do container.
-docker images  – Lista as imagens disponíveis no host.
-docker import  – Importa uma imagem .tar para o host.
-docker info    – Exibe as informações sobre o host.
-docker inspect – Exibe r o json com todas as configurações do container.
-docker kill    – Da Poweroff no container.
-docker load    – Carrega a imagem de um arquivo .tar.
-docker login   – Registra ou faz o login em um servidor de registry.
-docker logout  – Faz o logout de um servidor de registry.
-docker logs    – Exibe os logs de um container.
-docker port    – Abre uma porta do host e do container.
-docker network – Gerenciamento das redes do Docker.
-docker node    – Gerenciamento dos nodes do Docker Swarm.
-docker pause   – Pausa o container.
-docker port    – Lista as portas mapeadas de um container.
-docker ps      – Lista todos os containers.
-docker pull    – Faz o pull de uma imagem a partir de um servidor de registry.
-docker push    – Faz o push de uma imagem a partir de um servidor de registry.
-docker rename  – Renomeia um container existente.
-docker restart – Restarta um container que está rodando ou parado.
-docker rm      – Remove um ou mais containeres.
-docker rmi     – Remove uma ou mais imagens.
-docker run     – Executa um comando em um novo container.
-docker save    – Salva a imagem em um arquivo .tar.
-docker search  – Procura por uma imagem no Docker Hub.
-docker service – Gernciamento dos serviços do Docker.
-docker start   – Inicia um container que esteja parado.
-docker stats   – Exibe informações de uso de CPU, memória e rede.
-docker stop    – Para um container que esteja rodando.
-docker swarm   – Clusterização das aplicações em uma orquestração de várias containers, aplicações junto.
-docker tag     – Coloca tag em uma imagem para o repositorio.
-docker top     – Exibe os processos rodando em um container.
-docker unpause – Inicia um container que está em pause.
-docker update  – Atualiza a configuração de um ou mais containers.
-docker version – Exibe as versões de API, Client e Server do host.
-docker volume  – Gerenciamento dos volumes no Docker.
-docker wait    – Aguarda o retorno da execução de um container para iniciar esse container.
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/jesher/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with
+                           "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/jesher/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/jesher/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/jesher/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.8.1-docker)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.17.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+
 
 ```
-
-- **Obs.: É possível ver todos os comandos que o Docker possui, tendo o docker instalado, basta digitar no terminal docker --help**

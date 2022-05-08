@@ -180,3 +180,34 @@ docker system prune -a
 docker cp <CONTAINER ID>:/app/dump.sql /home/user
 
 ```
+
+## Verificar informações de processamento
+
+```
+docker top <CONTAINER ID>
+
+```
+
+## Inspecionar um container
+- usar o nome ou id
+
+```
+docker inspect <CONTAINER ID>
+
+```
+
+## Verificar processamento de memoria e cpu dos containers
+
+```
+docker stats
+
+```
+
+## Enviar imagens para docker hub
+
+```
+docker login
+docker push
+docker logout
+
+```

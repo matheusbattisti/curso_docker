@@ -5,6 +5,7 @@ WORKDIR /src
 COPY package*.json ./
 
 RUN npm install
+RUN apt update && apt upgrade -y && apt install nano -y
 
 COPY . .
 

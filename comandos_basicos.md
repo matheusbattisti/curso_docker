@@ -125,10 +125,17 @@ docker run -it 80:80 --name servidor-apache httpd
 
 ## Executar servidor nginx 
 
-- Executando com parametro -d para executar em background
+- Executando com a flag **-d** para executar em background
 
 ```
 docker run -d -p 80:80 --name nginx-docker nginx
+
+```
+
+- Executando com a flag **--rm** para remover o container após ele ser parado
+
+```
+docker run -d -p 80:80 --name nginx-docker --rm nginx
 
 ```
 
@@ -136,5 +143,40 @@ docker run -d -p 80:80 --name nginx-docker nginx
 
 ```
 docker logs -f (id do container)
+
+```
+
+## Remover containers
+
+```
+docker container rm <NAMES>
+
+```
+
+## Remover images
+
+```
+docker rmi <IMAGE ID>
+docker image rm <IMAGE ID>
+
+```
+- Forçar remoção de imagem em uso
+
+```
+docker image rm --force <IMAGE ID>
+
+```
+
+## Remover containers nao usados(CUIDADO)
+
+```
+docker system prune -a
+
+```
+
+## Copiando arquivos de um container para o outro
+
+```
+docker cp <CONTAINER ID>:/app/dump.sql /home/user
 
 ```

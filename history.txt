@@ -177,3 +177,5 @@
   973* docker rmi 1c4f 2464
   974* docker rmi --force 1c4f 2464
   975* docker exec -it my_project /bin/bash
+  976* docker volumes ls
+  977* docker run -it --mount source=outro-volume,target=/app --name whaler --rm debian /bin/bash

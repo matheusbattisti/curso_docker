@@ -1,6 +1,6 @@
 ## docker --help
 
-```
+``` docker
 Usage:  docker [OPTIONS] COMMAND
 
 A self-sufficient runtime for containers

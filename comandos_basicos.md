@@ -97,6 +97,7 @@ docker inspect (id da imagem ou container)
 
 ```
 docker stop (id ou nome container)
+docker stop $(docker ps -q)
 
 ```
 
@@ -150,6 +151,7 @@ docker logs -f (id do container)
 
 ```
 docker container rm <NAMES>
+docker container rm $(docker ps -aq) --force
 
 ```
 
@@ -164,6 +166,7 @@ docker image rm <IMAGE ID>
 
 ```
 docker image rm --force <IMAGE ID>
+docker rmi $(docker images --quiet) --force
 
 ```
 

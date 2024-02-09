@@ -14,4 +14,6 @@ spec:
     spec:
       containers:
         - name: flask
-          image: matheusbattisti/flask-kub-projeto:5
+        # Código antigo do curso
+        # image: matheusbattisti/flask-kub-projeto:5
+          image: matheusbattisti/flask-kub-projeto

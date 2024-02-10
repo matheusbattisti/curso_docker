@@ -7,7 +7,7 @@
 
   $fileName = "msg-{$num_files}.txt";
 
-  $file = fopen("./messages/{$fileName}", "x");
+  $file = fopen("./messages/{$fileName}", "x"); #no linux eu tive que executar sudo chmod 777 messages, para conseguir executar
 
   fwrite($file, $message);
 

@@ -1,0 +1,181 @@
+  832  grep docker /etc/passwd
+  833  grep "docker" /etc/passwd
+  835  grep docker /etc/group
+  839  docker run docker/whalesay cowsay Hello_World
+  840  docker run docker/whalesay cowsay Olá_Emilly
+  842  docker ps
+  843  docker --help
+  844  docker run docker/whalesay cowsay "Olá_Emilly"
+  845  docker run docker/whalesay cowsay "Olá mundo"
+  846  docker run ubuntu
+  847  docker ps
+  848  docker run -it ubuntu
+  849  docker run -it --name teste ubuntu
+  850  docker run --name teste ubuntu
+  851  docker run -it ubuntu
+  852  docker run docker/whalesay cowsay "Olá_Emilly"
+  853  docker run -ti --rm mpepping/ponysay "OOOOOOOOOOOOOOOOOOI EMILLY"
+  854  docker run -it node
+  855  docker ps -a
+  856  docker run -it node
+  857  sudo docker stop 29f72b4bc497
+  858  docker ps
+  859  sudo docker stop bb3e146a83c4
+  860  docker ps -a
+  861  docker run -p 80:80 nginx
+  862  docker stop f7ec47a4370d
+  863  docker start f7ec47a4370d
+  864  docker ps
+  865  docker stop f7ec47a4370d
+  866  docker run -p 80:80 --name nginx-docker nginx
+  867  docker stop nginx-docker
+  868  docker logs nginx
+  869  docker logs nginx-docker
+  870  docker rm b63b
+  871  docker run docker/whalesay cowsay "Hello_World"
+  872  docker image ls
+  873  docker run -it 80:80 --name servidor-apache httpd
+  874  docker container ls
+  875  docker images
+  876  docker run -it -d node
+  877  docker run -d -p 80:80 --name nginx-docker nginx
+  879  docker ps -a
+  880  docker rm 0d37
+  881  docker run -p 80:80 --name nginx-docker nginx
+  882  docker run -d -p 80:80 --name nginx-docker nginx
+  884  docker run -d -p 3000 --name nginx-jesher nginx
+  885  docker ps
+  886  docker stop 3ca
+  887  tail -f | docker logs 6fd
+  888  docker logs -f 6fd
+  889  docker ps 
+  890  docker start 4f5
+  891  docker start -i 4f5
+  892  docker run -d -p 80:80 --name meu-apache httpd
+  894  docker run -ti --rm mpepping/ponysay "OIEEEEEEEEEEEEEEEEEEE TE AMO"
+  897  docker container ls
+  898  docker image ls
+  935  docker --help
+  936  docker container ls
+  937  docker image ls
+  938  docker build --tag docker/nome:1.0 .
+  939  docker image ls
+  940  docker container ls
+  941  docker rm 928
+  942  docker rm 9281
+  943  docker image rm 9281a4197c6c
+  944  docker build -t docker/node:1.0 .
+  946  docker build -t docker/node:1.0 .
+  947  docker image rm 436
+  948  docker build -t docker/node:1.0 .
+  949  docker image ls
+  950  docker run -d -p 3000 docker/node
+  951  docker run -d -p 3000 docker/node:1.0
+  952  docker stop ae35
+  953  docker ps
+  954  docker ps -a
+  955  docker stop ae35
+  957  docker --help
+  958  git commit -m "update comandos_docker"
+  959  docker build -t docker/node .
+  961  docker image ls
+  962  docker run -d -p 3000:3000 1c4fb
+  963  docker ps
+  964  docker run -d -p 3000:3000 --name meu_node 1c4fb90b0d74
+  965  history | grep docker
+  832  grep docker /etc/passwd
+  833  grep "docker" /etc/passwd
+  835  grep docker /etc/group
+  839  docker run docker/whalesay cowsay Hello_World
+  840  docker run docker/whalesay cowsay Olá_Emilly
+  842  docker ps
+  843  docker --help
+  844  docker run docker/whalesay cowsay "Olá_Emilly"
+  845  docker run docker/whalesay cowsay "Olá mundo"
+  846  docker run ubuntu
+  847  docker ps
+  848  docker run -it ubuntu
+  849  docker run -it --name teste ubuntu
+  850  docker run --name teste ubuntu
+  851  docker run -it ubuntu
+  852  docker run docker/whalesay cowsay "Olá_Emilly"
+  853  docker run -ti --rm mpepping/ponysay "OOOOOOOOOOOOOOOOOOI EMILLY"
+  854  docker run -it node
+  855  docker ps -a
+  856  docker run -it node
+  857  sudo docker stop 29f72b4bc497
+  858  docker ps
+  859  sudo docker stop bb3e146a83c4
+  860  docker ps -a
+  861  docker run -p 80:80 nginx
+  862  docker stop f7ec47a4370d
+  863  docker start f7ec47a4370d
+  864  docker ps
+  865  docker stop f7ec47a4370d
+  866  docker run -p 80:80 --name nginx-docker nginx
+  867  docker stop nginx-docker
+  868  docker logs nginx
+  869  docker logs nginx-docker
+  870  docker rm b63b
+  871  docker run docker/whalesay cowsay "Hello_World"
+  872  docker image ls
+  873  docker run -it 80:80 --name servidor-apache httpd
+  874  docker container ls
+  875  docker images
+  876  docker run -it -d node
+  877  docker run -d -p 80:80 --name nginx-docker nginx
+  879  docker ps -a
+  880  docker rm 0d37
+  881  docker run -p 80:80 --name nginx-docker nginx
+  882  docker run -d -p 80:80 --name nginx-docker nginx
+  884  docker run -d -p 3000 --name nginx-jesher nginx
+  885  docker ps
+  886  docker stop 3ca
+  887  tail -f | docker logs 6fd
+  888  docker logs -f 6fd
+  889  docker ps 
+  890  docker start 4f5
+  891  docker start -i 4f5
+  892  docker run -d -p 80:80 --name meu-apache httpd
+  894  docker run -ti --rm mpepping/ponysay "OIEEEEEEEEEEEEEEEEEEE TE AMO"
+  897  docker container ls
+  898  docker image ls
+  935* docker --help
+  936* docker container ls
+  937* docker image ls
+  938* docker build --tag docker/nome:1.0 .
+  939* docker image ls
+  940* docker container ls
+  941* docker rm 928
+  942* docker rm 9281
+  943* docker image rm 9281a4197c6c
+  944* docker build -t docker/node:1.0 .
+  946* docker build -t docker/node:1.0 .
+  947* docker image rm 436
+  948* docker build -t docker/node:1.0 .
+  949* docker image ls
+  950* docker run -d -p 3000 docker/node
+  951* docker run -d -p 3000 docker/node:1.0
+  952* docker stop ae35
+  953* docker ps
+  954* docker ps -a
+  955* docker stop ae35
+  957* docker --help
+  958* git commit -m "update comandos_docker"
+  959* docker build -t docker/node .
+  961* docker image ls
+  962* docker run -d -p 3000:3000 1c4fb
+  963* docker ps
+  964* docker run -d -p 3000:3000 --name meu_node 1c4fb90b0d74
+  965* history | grep docker
+  966* history | grep docker >> ~/Cursos/curso_docker/comandos_executados
+  968* docker build -t docker/node2 .
+  969* docker run -d -p 3000:3000 --name meu_node2 2464
+  970* docker build -t my_project/node .
+  971* docker run -d -p 3001:3001 --name my_project b0f22
+  972* docker images
+  973* docker rmi 1c4f 2464
+  974* docker rmi --force 1c4f 2464
+  975* docker exec -it my_project /bin/bash
+  976* docker volumes ls
+  977* docker run -it --mount source=outro-volume,target=/app --name whaler --rm debian /bin/bash
